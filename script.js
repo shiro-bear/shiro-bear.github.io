@@ -1,26 +1,15 @@
-'use strict';
-{
-　 // swiperを初期化
-  const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'vertical',
-    loop: true,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
+  var swiper = new Swiper(".mySwiper", {
+    effect: "cube", //スライドのエフェクトを指定
+    loop: true, //ループを一番目初めからに設定
+    grabCursor: true,
+    cubeEffect: {
+      shadow: true,
+      slideShadows: true,
+      shadowOffset: 20,
+      shadowScale: 0.94,
     },
-  
-    // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
+      nextEl: ".swiper-button-next", //矢印右
+      prevEl: ".swiper-button-prev", //矢印左
     },
   });
-}
-
