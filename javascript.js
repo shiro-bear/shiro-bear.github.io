@@ -1,4 +1,4 @@
-<script language="JavaScript">
+<script type="text/javascript">
 	function message() {
 	  document.getElementById("view_time").innerHTML = getNow();
 	}
