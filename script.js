@@ -1,1 +1,1 @@
-console.log(10);
+const swiper = new Swiper(".swiper", {});
