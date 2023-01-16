@@ -1,4 +1,4 @@
-  var swiper = new Swiper(".mySwiper", {
+  const swiper = new Swiper(".swiper", {
     effect: "cube", //スライドのエフェクトを指定
     loop: true, //ループを一番目初めからに設定
     grabCursor: true,
