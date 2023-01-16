@@ -1,38 +1,39 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--<head></head>内に貼り付け-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    
-    <title>サンプル</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Quiz App</title>
   </head>
   <body>
-    <form><input type="button" value="日時表示" onClick="message()"></form>
-    <span id="view_time"></span>
-    <div class="swiper">
-    <!-- スライド要素を包む要素 -->
-    <div class="swiper-wrapper">
-      <!-- 各スライド -->
-      <div class="swiper-slide slide1">
-        <p>1枚目のSlide</p>
+    <div class="quiz-container" id="quiz">
+      <div class="quiz-header">
+        <h2 id="question">Question text</h2>
+        <ul>
+          <li>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="a" id="a_text">Question</label>
+          </li>
+
+          <li>
+            <input type="radio" name="answer" id="b" class="answer">
+            <label for="b" id="b_text">Question</label>
+          </li>
+
+          <li>
+            <input type="radio" name="answer" id="c" class="answer">
+            <label for="c" id="c_text">Question</label>
+          </li>
+
+          <li>
+            <input type="radio" name="answer" id="d" class="answer">
+            <label for="d" id="d_text">Question</label>
+          </li>
+        </ul>
       </div>
-      <div class="swiper-slide slide2">
-        <p>2枚目のSlide</p>
-      </div>
-      <div class="swiper-slide slide3">
-        <p>3枚目のSlide</p>
-      </div>
+      <button id="submit">Submit</button>
     </div>
-  </div>
-    <!--</body>の前に貼り付け-->
-    <script type="text/javascript" src="javascript.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
