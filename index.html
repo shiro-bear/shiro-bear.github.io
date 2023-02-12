@@ -1,33 +1,41 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css" />
     <title>test</title>
-  </head>
-  <!-- Sliderを包むコンテナ要素 -->
-  <div class="swiper">
-    <!-- スライド要素を包む要素 -->
-    <div class="swiper-wrapper">
-      <!-- 各スライド -->
-      <div class="swiper-slide slide1">
-        <p>1枚目のSlide</p>
-      </div>
-      <div class="swiper-slide slide2">
-        <p>2枚目のSlide</p>
-      </div>
-      <div class="swiper-slide slide3">
-        <p>3枚目のSlide</p>
-      </div>
+</head>
+
+<body>
+    <!-- Sliderを包むコンテナ要素 -->
+    <div class="swiper" id="rote">
+        <!-- スライド要素を包む要素 -->
+        <div class="swiper-wrapper">
+            <!-- 各スライド -->
+            <div class="swiper-slide slide1" id="slide1">
+                <p></p>
+            </div>
+            <div class="swiper-slide slide2" id="slide2">
+                <p></p>
+            </div>
+            <div class="swiper-slide slide3" id="slide3">
+                <p></p>
+            </div>
+        </div>
     </div>
-  </div>
-    
-     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-     <script src="script.js"></script>
-  </body>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <p>
+        <label>解答入力<input type="text" id="nameText"></label>
+        <input type="button" value="Check" id="checkButton">
+    </p>
+
+    <a href="javascript:onClick()">回転</a>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
 </html>
